@@ -7,20 +7,11 @@
 
     <TextView
         android:id="@+id/display_calc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/clear"
-        android:layout_alignParentTop="true"
-        android:text="@string/hello_world" />
-
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:onClick="clear"
-        android:text="@string/button_c" />
+        android:text="@string/hello_world" />
 
     <Button
         android:id="@+id/b1"
@@ -37,7 +28,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/b1"
         android:layout_alignBottom="@+id/b1"
-        android:layout_toRightOf="@+id/display_calc"
+        android:layout_toRightOf="@+id/b1"
+        android:onClick="putText"
         android:text="@string/button_2" />
+    
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b2"
+        android:layout_toRightOf="@+id/b2"
+        android:onClick="clear"
+        android:text="@string/button_c" />
+        
 
 </RelativeLayout>
