@@ -82,5 +82,26 @@ public class MainActivity extends Activity {
 	    t=(TextView)findViewById(R.id.display_calc); 
 	    t.setText("");
 	}
+	
+	public void add (View view){
+		
+		
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    float num1=(Float.valueOf(viewText).floatValue());
+	    t.setText("");
+	    String viewText2= t.getText().toString();
+	    float num2=(Float.valueOf(viewText2)).floatValue();
+	    float answer= num1+num2;
+	    t.setText(String.valueOf(answer));
+	    
+	    
+	    
+	    
+		
+		
+	
+	}
 
 }
