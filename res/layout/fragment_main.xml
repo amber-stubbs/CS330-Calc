@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/display_calc"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+  	    android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:text="@string/hello_world" />
@@ -33,13 +33,98 @@
         android:text="@string/button_2" />
     
     <Button
-        android:id="@+id/clear"
+        android:id="@+id/b3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/b2"
         android:layout_toRightOf="@+id/b2"
+        android:onClick="putText"
+        android:text="@string/button_3" />
+    
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b1"
+        android:onClick="putText"
+        android:text="@string/button_4" />
+    
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b4"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_toRightOf="@+id/b4"
+        android:onClick="putText"
+        android:text="@string/button_5" />
+    
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b5"
+        android:layout_toRightOf="@+id/b5"
+        android:onClick="putText"
+        android:text="@string/button_6" />
+  
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b4"
+        android:onClick="putText"
+        android:text="@string/button_7" />
+    
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b7"
+        android:layout_alignBottom="@+id/b7"
+        android:layout_toRightOf="@+id/b7"
+        android:onClick="putText"
+        android:text="@string/button_8" />
+    
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b8"
+        android:layout_toRightOf="@+id/b8"
+        android:onClick="putText"
+        android:text="@string/button_9" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b7"
+        android:onClick="putText"
+        android:text="@string/button_0" />
+   
+   <Button
+        android:id="@+id/bd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b0"
+        android:layout_alignBottom="@+id/b0"
+        android:layout_toRightOf="@+id/b0"
+        android:onClick="putText"
+        android:text="@string/button_decimal" />
+        
+   <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bd"
+        android:layout_toRightOf="@+id/bd"
         android:onClick="clear"
         android:text="@string/button_c" />
-        
 
+
+    
 </RelativeLayout>
