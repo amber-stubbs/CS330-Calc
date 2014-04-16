@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     tools:context="edu.simmons.cs330sp14.cs330_calc.MainActivity$PlaceholderFragment" >
 
@@ -107,7 +107,7 @@
         android:text="@string/button_0" />
    
    <Button
-        android:id="@+id/bd"
+        android:id="@+id/decimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/b0"
@@ -115,16 +115,77 @@
         android:layout_toRightOf="@+id/b0"
         android:onClick="putText"
         android:text="@string/button_decimal" />
-        
+   
    <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/bd"
-        android:layout_toRightOf="@+id/bd"
-        android:onClick="clear"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/display_calc"
+        android:onClick="putText"
         android:text="@string/button_c" />
-
-
-    
+   
+      <Button
+        android:id="@+id/backspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_calc"
+        android:layout_toLeftOf="@+id/clear"
+        android:onClick="putText"
+        android:text="@string/button_backspace" />
+   
+   <Button
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/clear"
+        android:onClick="putText"
+        android:text="@string/button_subtract" />
+   
+   <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backspace"
+        android:layout_toLeftOf="@+id/subtract"
+        android:onClick="putText"
+        android:text="@string/button_add" />
+   
+   <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subtract"
+        android:onClick="putText"
+        android:text="@string/button_multiply" />
+   
+   <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_toLeftOf="@+id/multiply"
+        android:onClick="putText"
+        android:text="@string/button_divide" />
+   
+   <Button
+        android:id="@+id/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/multiply"
+        android:onClick="putText"
+        android:text="@string/button_equal" />
+   
+   <Button
+        android:id="@+id/mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide"
+        android:layout_toLeftOf="@+id/equal"
+        android:onClick="putText"
+        android:text="@string/button_mod" />
+     
 </RelativeLayout>
