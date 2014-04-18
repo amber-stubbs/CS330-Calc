@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/clear"
-        android:onClick="putText"
+        android:onClick="subtraction"
         android:text="@string/button_subtract" />
    
    <Button
