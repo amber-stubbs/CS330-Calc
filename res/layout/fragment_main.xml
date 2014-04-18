@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/display_calc"
-        android:onClick="putText"
+        android:onClick="clear"
         android:text="@string/button_c" />
    
       <Button
@@ -149,7 +149,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/backspace"
         android:layout_toLeftOf="@+id/subtract"
-        android:onClick="putText"
+        android:onClick="add"
         android:text="@string/button_add" />
    
    <Button
@@ -187,5 +187,14 @@
         android:layout_toLeftOf="@+id/equal"
         android:onClick="putText"
         android:text="@string/button_mod" />
+   
+   <ImageView
+        android:id="@+id/naruchu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/naruchuu" />
+ 
      
 </RelativeLayout>
