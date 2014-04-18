@@ -10,17 +10,17 @@
         android:layout_width="fill_parent"
   	    android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true" />
 
-    <Button
+    <ImageButton
         android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/display_calc"
         android:onClick="putText"
-        android:text="@string/button_1" />
+        android:contentDescription="@string/button_1"
+        android:src="@drawable/torchic_tiny" />
 
     <Button
         android:id="@+id/b2"
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/display_calc"
         android:layout_toLeftOf="@+id/clear"
-        android:onClick="putText"
+        android:onClick="backspace"
         android:text="@string/button_backspace" />
    
    <Button
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/clear"
-        android:onClick="putText"
+        android:onClick="sub"
         android:text="@string/button_subtract" />
    
    <Button
@@ -158,7 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/subtract"
-        android:onClick="putText"
+        android:onClick="multiply"
         android:text="@string/button_multiply" />
    
    <Button
@@ -167,7 +167,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/add"
         android:layout_toLeftOf="@+id/multiply"
-        android:onClick="putText"
+        android:onClick="divide"
         android:text="@string/button_divide" />
    
    <Button
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/multiply"
-        android:onClick="putText"
+        android:onClick="equal"
         android:text="@string/button_equal" />
    
    <Button
@@ -185,11 +185,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/divide"
         android:layout_toLeftOf="@+id/equal"
-        android:onClick="putText"
+        android:onClick="mod"
         android:text="@string/button_mod" />
    
    <ImageView
         android:id="@+id/naruchu"
+        android:contentDescription="@string/naruchu"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
