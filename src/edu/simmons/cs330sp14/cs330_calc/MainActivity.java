@@ -65,9 +65,14 @@ public class MainActivity extends Activity {
 
 	
 /**Code for the calculator**/
-	//JF 4-16 @9:15
-	private float memory;
-	private float eqMem;
+	float num1 = 0;
+	float num2 = 0;
+	
+	boolean booA = false ;
+	boolean booS = false ;
+	boolean booD = false ;
+	boolean booM = false ;
+	boolean booMo = false ;
 	
 	/** Called when the user clicks the a button */
 	public void putText(View view){
@@ -87,31 +92,70 @@ public class MainActivity extends Activity {
 	}
 	
 	public void add (View view){
-		
-		
 		TextView t=new TextView(this); 
 	    t=(TextView)findViewById(R.id.display_calc);
 	    String viewText= t.getText().toString();
-	    float num1=(Float.valueOf(viewText).floatValue());
+	    num1=(Float.valueOf(viewText).floatValue());
 	    t.setText("");
-	    String viewText2= t.getText().toString();
-	    float num2=(Float.valueOf(viewText2)).floatValue();
-	    float answer= num1+num2;
-	    t.setText(String.valueOf(answer));
-	    
-	    
-	    
-	    
-		
-		
-	
-	//JF 4-16 @9:15
-	public void subtraction(View view){
-		TextView t=new TextView(this); 
-	    t=(TextView)findViewById(R.id.display_calc); 
-	    String text = t.toString();
-	    memory = Float.parseFloat(text);
-	    t.setText("");
+	    booA = true;
 	}
+	
+	public void sub (View view){
+		//subtract a num   
+	}
+	
+	public void multiply (View view){
+		//multiply num    
+	}
+	
+	public void divide (View view){
+		//divide num	    
+	}
+	
+	public void mod(View view){
+		//mod somethin'	  
+	}
+	public void equal (View view){
+		//get the answer
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    num2=(Float.valueOf(viewText).floatValue());
+	    if (booA==true)
+		{
+	    	num2 = num2 + num1;
+		}
+		else if(booS==true)
+		{
+			num2 = num1 - num2;
+		}
+		else if(booD==true)
+		{
+			num2 = num1 / num2;
+		}
+		else if(booM==true)
+		{
+			num2 = num2 * num1;
+		}
+		else if(booMo==true)
+		{
+			num2 = num1 % num2;
+		}
+	    
+	    t.setText(num2);
+		
+		booA = false;
+		booS = false;
+		booD = false;
+		booM = false;
+		booMo = false;
+
+	    
+	}
+	
+	public void backspace (View view){
+		//delete 1 things in the calc 
+	}
+	
 
 }
