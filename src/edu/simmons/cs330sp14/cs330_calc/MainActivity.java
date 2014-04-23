@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.os.Build;
 
@@ -83,7 +84,7 @@ public class MainActivity extends Activity {
 	    t=(TextView)findViewById(R.id.display_calc); 
 	    t.setText(t.getText().toString()+buttonText);
 	}
-	
+
 	public void clear(View view) {
 	    // Do something in response to button
 	    TextView t=new TextView(this); 
@@ -142,7 +143,8 @@ public class MainActivity extends Activity {
 			num2 = num1 % num2;
 		}
 	    
-	    t.setText(num2);
+	    String result = String.valueOf(num2);
+	    t.setText(result);
 		
 		booA = false;
 		booS = false;
