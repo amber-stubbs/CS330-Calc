@@ -23,7 +23,7 @@
         android:text="@string/button_1"
         android:drawableLeft="@drawable/torchic_tiny" />
 
-    <ImageButton
+    <Button
         android:id="@+id/b2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,29 +32,30 @@
         android:layout_toRightOf="@+id/b1"
         android:onClick="putText"
         android:contentDescription="@string/button_2"
-    	android:src="@drawable/eevee_tiny" />
+        android:text="@string/button_2"
+    	android:drawableLeft="@drawable/eevee_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/b2"
         android:layout_toRightOf="@+id/b2"
         android:onClick="putText"
-        android:contentDescription="@string/button_3"
-    	android:src="@drawable/squirtle_tiny" />
+        android:text="@string/button_3"
+    	android:drawableLeft="@drawable/squirtle_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/b1"
         android:onClick="putText"
-        android:contentDescription="@string/button_4"
-        android:src="@drawable/pansage_tiny" />
+        android:text="@string/button_4"
+        android:drawableLeft="@drawable/pansage_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,30 +63,30 @@
         android:layout_alignBottom="@+id/b4"
         android:layout_toRightOf="@+id/b4"
         android:onClick="putText"
-        android:contentDescription="@string/button_5"
-        android:src="@drawable/slurpuff_tiny" />
+        android:text="@string/button_5"
+        android:drawableLeft="@drawable/slurpuff_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/b5"
         android:layout_toRightOf="@+id/b5"
         android:onClick="putText"
-        android:contentDescription="@string/button_6"
-        android:src="@drawable/wynaut_tiny" />
+        android:text="@string/button_6"
+        android:drawableLeft="@drawable/wynaut_tiny" />
   
-    <ImageButton
+    <Button
         android:id="@+id/b7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/b4"
         android:onClick="putText"
-        android:contentDescription="@string/button_7"
-        android:src="@drawable/teddiursa_tiny" />
+        android:text="@string/button_7"
+        android:drawableLeft="@drawable/teddiursa_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,28 +94,28 @@
         android:layout_alignBottom="@+id/b7"
         android:layout_toRightOf="@+id/b7"
         android:onClick="putText"
-        android:contentDescription="@string/button_8"
-        android:src="@drawable/spoink_tiny" />
+        android:text="@string/button_8"
+        android:drawableLeft="@drawable/spoink_tiny" />
     
-    <ImageButton
+    <Button
         android:id="@+id/b9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/b8"
         android:layout_toRightOf="@+id/b8"
         android:onClick="putText"
-        android:contentDescription="@string/button_9"
-        android:src="@drawable/bellossom_tiny" />
+        android:text="@string/button_9"
+        android:drawableLeft="@drawable/bellossom_tiny" />
 
-    <ImageButton
+    <Button
         android:id="@+id/b0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/b7"
         android:onClick="putText"
-        android:contentDescription="@string/button_0"
-        android:src="@drawable/ditto_tiny" />
+        android:text="@string/button_0"
+        android:drawableLeft="@drawable/ditto_tiny" />
    
    <Button
         android:id="@+id/decimal"
@@ -136,13 +137,13 @@
         android:text="@string/button_c" />
    
       <Button
-        android:id="@+id/backspace"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/display_calc"
         android:layout_toLeftOf="@+id/clear"
-        android:onClick="backspace"
-        android:text="@string/button_backspace" />
+        android:onClick="add"
+        android:text="@string/button_add" />
    
    <Button
         android:id="@+id/subtract"
@@ -152,15 +153,6 @@
         android:layout_below="@+id/clear"
         android:onClick="sub"
         android:text="@string/button_subtract" />
-   
-   <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/backspace"
-        android:layout_toLeftOf="@+id/subtract"
-        android:onClick="add"
-        android:text="@string/button_add" />
    
    <Button
         android:id="@+id/multiply"
