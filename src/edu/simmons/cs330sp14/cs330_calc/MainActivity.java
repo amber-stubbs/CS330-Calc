@@ -103,18 +103,42 @@ public class MainActivity extends Activity {
 	
 	public void sub (View view){
 		//subtract a num   
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    num1=(Float.valueOf(viewText).floatValue());
+	    t.setText("");
+	    booS = true;
 	}
 	
 	public void multiply (View view){
-		//multiply num    
+		//multiply num  
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    num1=(Float.valueOf(viewText).floatValue());
+	    t.setText("");
+	    booM = true;
 	}
 	
 	public void divide (View view){
-		//divide num	    
+		//divide num
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    num1=(Float.valueOf(viewText).floatValue());
+	    t.setText("");
+	    booD = true;
 	}
 	
 	public void mod(View view){
-		//mod somethin'	  
+		//mod somethin'	
+		TextView t=new TextView(this); 
+	    t=(TextView)findViewById(R.id.display_calc);
+	    String viewText= t.getText().toString();
+	    num1=(Float.valueOf(viewText).floatValue());
+	    t.setText("");
+	    booMo = true;
 	}
 	public void equal (View view){
 		//get the answer
@@ -157,6 +181,7 @@ public class MainActivity extends Activity {
 	
 	public void backspace (View view){
 		//delete 1 things in the calc 
+		
 	}
 	
 
