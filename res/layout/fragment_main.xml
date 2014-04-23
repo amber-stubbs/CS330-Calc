@@ -117,15 +117,7 @@
         android:text="@string/button_0"
         android:drawableLeft="@drawable/ditto_tiny" />
    
-   <Button
-        android:id="@+id/decimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/b0"
-        android:layout_alignBottom="@+id/b0"
-        android:layout_toRightOf="@+id/b0"
-        android:onClick="putText"
-        android:text="@string/button_decimal" />
+
    
    <Button
         android:id="@+id/clear"
@@ -137,14 +129,22 @@
         android:text="@string/button_c" />
    
       <Button
-        android:id="@+id/add"
+        android:id="@+id/decimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/display_calc"
         android:layout_toLeftOf="@+id/clear"
+        android:onClick="decimal"
+        android:text="@string/button_decimal" />
+   
+      <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decimal"
+        android:layout_toLeftOf="@+id/subtract"
         android:onClick="add"
         android:text="@string/button_add" />
-   
    <Button
         android:id="@+id/subtract"
         android:layout_width="wrap_content"
